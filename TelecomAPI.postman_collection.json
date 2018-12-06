@@ -1,0 +1,102 @@
+{
+	"id": "d27580e1-5a16-cdf4-f257-1242ec14629a",
+	"name": "TelecomAPI",
+	"description": "",
+	"order": [
+		"04783ecf-8a48-e21c-94ff-12b60d44ca3a",
+		"15cce3f6-84ef-88cf-45ee-46096fb19d26",
+		"d675515b-41a4-7470-0dcf-681ef3345486"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1544041963081,
+	"owner": "1555221",
+	"public": false,
+	"requests": [
+		{
+			"id": "04783ecf-8a48-e21c-94ff-12b60d44ca3a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:51301/api/telecom/ActivateNumber",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "d27580e1-5a16-cdf4-f257-1242ec14629a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "ActivateNumber",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1544041992200,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\t\r\n\tCustomerId: 2,\r\n\tPhoneNumer: \"9898989898\", \r\n}"
+		},
+		{
+			"id": "15cce3f6-84ef-88cf-45ee-46096fb19d26",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:51301/api/telecom/GetAllPhoneNumbers",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d27580e1-5a16-cdf4-f257-1242ec14629a",
+			"data": null,
+			"dataMode": "params",
+			"name": "GetAllPhoneNumbers",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1544042043178,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d675515b-41a4-7470-0dcf-681ef3345486",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:51301/api/telecom/GetCustomerPhoneNumbers?customerId=2",
+			"queryParams": [
+				{
+					"key": "customerId",
+					"value": "2",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d27580e1-5a16-cdf4-f257-1242ec14629a",
+			"data": null,
+			"dataMode": "params",
+			"name": "GetCustomerPhoneNumbers",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1544042095608,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
